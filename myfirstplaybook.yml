@@ -1,0 +1,16 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: I want to install tree blahblah...
+    apt: 
+     name: tree
+     state: present
+  - name: I want to install wget blahblah...
+    apt:
+     name: wget
+     state: present
+  - name: I want to install webserver blahblah..
+    apt:
+     name: apache2
+     state: present 
