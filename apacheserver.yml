@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: apacheserver
   become: yes
   tasks:
   - name: I want to install apache werbserver on ubuntu
