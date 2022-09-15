@@ -6,19 +6,22 @@
     apt:
       name: apache2
       state: present
-    when: ansibe_os_family = "Debian"
+    when: ansibe_os_family=="Debian"
+
   - name: I want to start webserver
     service: 
       name: apache2
       state: started
-    when: ansible_os_family = "Debian"
+    when: ansible_os_family=="Debian"
+
   - name: I want to install webserver on redhat
     yum:
       name: httpd
       state: present
-    when: ansible_os_family = "Redhat"
+    when: ansible_os_family=="Redhat"
+
   - name: I want to start webserver on redhat
     service:
       name: httpd
       state: started
-    when: ansible_os_family = "Redhat" 
+    when: ansible_os_family=="Redhat" 
