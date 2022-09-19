@@ -12,7 +12,7 @@
     apt:
      name: wget
      state: present
-    tags: myget
+    tags: mywget
 
   - name: install tree
     apt:
