@@ -2,7 +2,7 @@
 - hosts: 172.31.20.36
   become: yes
   tasks:
-- name: install apahe2
+- name: install apache2
   apt:
     name: apache2
     state: present
